@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*>>>>>>> Navbar  <<<<<<<*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.nav{
+  width: 100vw;
+  min-height: 10px;
+  background: none;
+  padding: 0 20px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 30%;
+}
+
+.nav-left svg{
+  font-size: 20px;
+  color: #767879;
+  margin-right: 15%;
+  cursor: pointer;
+}
+
+.nav-left a:first-of-type{
+  text-decoration: none;
+  color: #0984e3;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid #0984e3;
+  padding: 10px 0;
+  margin-right: 10%;
+}
+.nav-left a:last-of-type{
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #767879;
+}
+
+.nav-right{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-right svg{
+  font-size: 20px;
+  color: #767879;
+}
+
+.nav-right img{
+  border-radius: 50%;
+  height: 40px;
+  margin-left: 15%;
+}
+
+
+/*>>>>>> Main <<<<<<*/
+
+.main{
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-google{
+  font-size: 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.g1{
+  color: #0984e3;
+}
+
+.g2{
+  color: red;
+}
+
+.g3{
+  color: rgb(241, 241, 7);
+}
+
+.g4{
+  color: #0984e3;
+}
+
+.g5{
+  color: rgb(1, 199, 1);
+}
+
+.g6{
+  color: red;
+}
+
+.main svg{
+  font-weight: bold;
+  color: #0984e3;
+  font-size: 30px;
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
 }
